@@ -82,6 +82,11 @@ namespace mt
         {
             return m_ball;
         }
+
+        void SetPosition(float x, float y)
+        {
+            m_ball->setPosition(x, y);
+        }
     };
 
     class GuideLine : public Object
@@ -104,6 +109,11 @@ namespace mt
         void Set_Angle(double angle)
         {
             m_line->setRotation(angle);
+        }
+
+        void Set_Length(double len)
+        {
+            m_line->setSize(sf::Vector2f(len, 25));
         }
 
         sf::RectangleShape* Get()

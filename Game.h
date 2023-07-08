@@ -23,6 +23,8 @@ namespace mt
 
         void setup();
 
+        void Move(double t, float angle, float velocity, mt::Player player, std::vector<mt::Wall*> walls, const mt::Wall& floor);
+
         void Run();
     };
 }
